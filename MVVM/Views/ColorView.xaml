@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ColorPicker.MVVM.Views.ColorView"
+             Title="ColorView"
+             BackgroundColor="#4d4d4d">
+
+    <Frame BackgroundColor="White" Margin="5" VerticalOptions="Center">
+        <VerticalStackLayout VerticalOptions="Center" Spacing="15">
+
+            <Label Text="Color Picker" 
+                       HorizontalOptions="Center" 
+                       FontSize="Large" 
+                       FontAttributes="Bold"/>
+
+            <!--Start of the red color-->
+            <Label Text="Red Value:" />
+
+            <Slider ThumbColor="Red" MinimumTrackColor="#ffe6e6" MaximumTrackColor="#ff0000" Minimum="0" Maximum="256"/>
+
+            <!--End of the red color-->
+
+
+            <!--Start of the blue color-->
+            <Label Text="Blue Value:" />
+
+            <Slider ThumbColor="Blue" MinimumTrackColor="#e6f0ff" MaximumTrackColor="#0066ff" Minimum="0" Maximum="256"/>
+
+            <!--End of the Blue color-->
+
+            <!--Start of the Green color-->
+            <Label Text="Green Value:" />
+
+            <Slider ThumbColor="Green" MinimumTrackColor="#adebad" MaximumTrackColor="#33cc33" Minimum="0" Maximum="256"/>
+
+            <!--End of the Blue color-->
+
+            <Frame WidthRequest="160">
+                <HorizontalStackLayout>
+                    <Label Text="HEX Value: #FFF00" />
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Button Text="Generate Random Color" BackgroundColor="Black"/>
+            
+        </VerticalStackLayout>
+    </Frame>
+</ContentPage>
